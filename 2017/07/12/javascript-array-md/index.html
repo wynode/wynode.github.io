@@ -12,16 +12,22 @@
   <link rel="dns-prefetch" href="http://wynode.com">
   <title>JavaScript编程题 —— 数组篇 | wynode的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.找出元素 item 在给定数组 arr 中的位置。如果数组中存在 item，则返回元素在数组中的位置，否则返回 -112345678function indexOf(arr, item) &amp;#123;    for(var i = 0; i &amp;lt; arr.length; i++)&amp;#123;        if(arr[i] == item)&amp;#123;            retur">
+  <meta name="description" content="最近跟着腾讯的IMWeb前端进行秋招训练，把每天会练习到的编程题做个总结。以下是第一天的练习，主要练到数组编程。
+
+ 1.找出元素 item 在给定数组 arr 中的位置。如果数组中存在 item，则返回元素在数组中的位置，否则返回 -112345678function indexOf(arr, item) &amp;#123;    for(var i = 0; i &amp;lt; arr.length;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript编程题 —— 数组篇">
 <meta property="og:url" content="http://wynode.com/2017/07/12/javascript-array-md/index.html">
 <meta property="og:site_name" content="wynode的博客">
-<meta property="og:description" content="1.找出元素 item 在给定数组 arr 中的位置。如果数组中存在 item，则返回元素在数组中的位置，否则返回 -112345678function indexOf(arr, item) &amp;#123;    for(var i = 0; i &amp;lt; arr.length; i++)&amp;#123;        if(arr[i] == item)&amp;#123;            retur">
-<meta property="og:updated_time" content="2017-07-12T12:49:36.590Z">
+<meta property="og:description" content="最近跟着腾讯的IMWeb前端进行秋招训练，把每天会练习到的编程题做个总结。以下是第一天的练习，主要练到数组编程。
+
+ 1.找出元素 item 在给定数组 arr 中的位置。如果数组中存在 item，则返回元素在数组中的位置，否则返回 -112345678function indexOf(arr, item) &amp;#123;    for(var i = 0; i &amp;lt; arr.length;">
+<meta property="og:updated_time" content="2017-07-12T12:56:08.812Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript编程题 —— 数组篇">
-<meta name="twitter:description" content="1.找出元素 item 在给定数组 arr 中的位置。如果数组中存在 item，则返回元素在数组中的位置，否则返回 -112345678function indexOf(arr, item) &amp;#123;    for(var i = 0; i &amp;lt; arr.length; i++)&amp;#123;        if(arr[i] == item)&amp;#123;            retur">
+<meta name="twitter:description" content="最近跟着腾讯的IMWeb前端进行秋招训练，把每天会练习到的编程题做个总结。以下是第一天的练习，主要练到数组编程。
+
+ 1.找出元素 item 在给定数组 arr 中的位置。如果数组中存在 item，则返回元素在数组中的位置，否则返回 -112345678function indexOf(arr, item) &amp;#123;    for(var i = 0; i &amp;lt; arr.length;">
   
     <link rel="alternative" href="/atom.xml" title="wynode的博客" type="application/atom+xml">
   
@@ -171,7 +177,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p> 1.找出元素 item 在给定数组 arr 中的位置。如果数组中存在 item，则返回元素在数组中的位置，否则返回 -1<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">indexOf</span>(<span class="params">arr, item</span>) </span>&#123;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</div><div class="line">        <span class="keyword">if</span>(arr[i] == item)&#123;</div><div class="line">            <span class="keyword">return</span> i;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+        <blockquote>
+<p>最近跟着腾讯的IMWeb前端进行秋招训练，把每天会练习到的编程题做个总结。以下是第一天的练习，主要练到数组编程。</p>
+</blockquote>
+<p> 1.找出元素 item 在给定数组 arr 中的位置。如果数组中存在 item，则返回元素在数组中的位置，否则返回 -1<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">indexOf</span>(<span class="params">arr, item</span>) </span>&#123;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</div><div class="line">        <span class="keyword">if</span>(arr[i] == item)&#123;</div><div class="line">            <span class="keyword">return</span> i;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
 <p>2.计算给定数组 arr 中所有元素的总和 （数组中的元素均为 Number 类型）<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">arr</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="built_in">eval</span>(arr.join(<span class="string">'+'</span>));</div><div class="line">       <span class="comment">//eval() 函数可计算某个字符串，并执行其中的的 JavaScript 代码;</span></div></pre></td></tr></table></figure></p>
 <p>3.移除数组 arr 中的所有值与 item 相等的元素。不要直接修改数组 arr，结果返回新的数组<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">remove</span>(<span class="params">arr, item</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> arr1 = [];</div><div class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>;i &lt; arr.length; i++)&#123;</div><div class="line">        <span class="keyword">if</span>(arr[i] != item)&#123;</div><div class="line">            arr1.push(arr[i]);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> arr1;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>4.移除数组 arr 中的所有值与 item 相等的元素，直接在给定的 arr 数组上进行操作，并将结果返回<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">removeWithoutCopy</span>(<span class="params">arr, item</span>) </span>&#123;</div><div class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</div><div class="line">        <span class="keyword">if</span>(arr[i] == item)&#123;</div><div class="line">            arr.splice(i,<span class="number">1</span>);</div><div class="line">         <span class="comment">//考虑数组长度。去掉i个重复元素，数组长度-i</span></div><div class="line">             i--;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> arr;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
@@ -384,11 +394,11 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">-JavaScript -数组</a>
+                <a href="javascript:void(0)" class="js-tag color3">-技术类 -chrome extension</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">-技术类 -chrome extension</a>
+                <a href="javascript:void(0)" class="js-tag color1">-JavaScript -数组</a>
               </li>
              
               <li class="article-tag-list-item">
