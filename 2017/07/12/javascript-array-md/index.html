@@ -10,17 +10,18 @@
   <meta name="baidu-site-verification" content="m0FfH7fnLK" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://wynode.com">
-  <title>Archives: 2017 | wynode的博客</title>
+  <title>JavaScript编程题 —— 数组篇 | wynode的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="CS专业在校学生，喜欢前端，向着Full Stack Engineer进发。嗯，还有想成为一名作家的梦。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="wynode的博客">
-<meta property="og:url" content="http://wynode.com/archives/2017/index.html">
+  <meta name="description" content="1.找出元素 item 在给定数组 arr 中的位置。如果数组中存在 item，则返回元素在数组中的位置，否则返回 -112345678function indexOf(arr, item) &amp;#123;    for(var i = 0; i &amp;lt; arr.length; i++)&amp;#123;        if(arr[i] == item)&amp;#123;            retur">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript编程题 —— 数组篇">
+<meta property="og:url" content="http://wynode.com/2017/07/12/javascript-array-md/index.html">
 <meta property="og:site_name" content="wynode的博客">
-<meta property="og:description" content="CS专业在校学生，喜欢前端，向着Full Stack Engineer进发。嗯，还有想成为一名作家的梦。">
+<meta property="og:description" content="1.找出元素 item 在给定数组 arr 中的位置。如果数组中存在 item，则返回元素在数组中的位置，否则返回 -112345678function indexOf(arr, item) &amp;#123;    for(var i = 0; i &amp;lt; arr.length; i++)&amp;#123;        if(arr[i] == item)&amp;#123;            retur">
+<meta property="og:updated_time" content="2017-07-12T12:49:36.590Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wynode的博客">
-<meta name="twitter:description" content="CS专业在校学生，喜欢前端，向着Full Stack Engineer进发。嗯，还有想成为一名作家的梦。">
+<meta name="twitter:title" content="JavaScript编程题 —— 数组篇">
+<meta name="twitter:description" content="1.找出元素 item 在给定数组 arr 中的位置。如果数组中存在 item，则返回元素在数组中的位置，否则返回 -112345678function indexOf(arr, item) &amp;#123;    for(var i = 0; i &amp;lt; arr.length; i++)&amp;#123;        if(arr[i] == item)&amp;#123;            retur">
   
     <link rel="alternative" href="/atom.xml" title="wynode的博客" type="application/atom+xml">
   
@@ -150,36 +151,47 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-javascript-array-md" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/12/javascript-array-md/" class="archive-article-date">
-  	<time datetime="2017-07-12T12:45:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-12</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/12/javascript-array-md/">JavaScript编程题 —— 数组篇</a>
+    <h1 class="article-title" itemprop="name">
+      JavaScript编程题 —— 数组篇
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/07/12/javascript-array-md/" class="archive-article-date">
+  	<time datetime="2017-07-12T12:45:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p> 1.找出元素 item 在给定数组 arr 中的位置。如果数组中存在 item，则返回元素在数组中的位置，否则返回 -1<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">indexOf</span>(<span class="params">arr, item</span>) </span>&#123;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</div><div class="line">        <span class="keyword">if</span>(arr[i] == item)&#123;</div><div class="line">            <span class="keyword">return</span> i;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>2.计算给定数组 arr 中所有元素的总和 （数组中的元素均为 Number 类型）<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">arr</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="built_in">eval</span>(arr.join(<span class="string">'+'</span>));</div><div class="line">       <span class="comment">//eval() 函数可计算某个字符串，并执行其中的的 JavaScript 代码;</span></div></pre></td></tr></table></figure></p>
+<p>3.移除数组 arr 中的所有值与 item 相等的元素。不要直接修改数组 arr，结果返回新的数组<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">remove</span>(<span class="params">arr, item</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> arr1 = [];</div><div class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>;i &lt; arr.length; i++)&#123;</div><div class="line">        <span class="keyword">if</span>(arr[i] != item)&#123;</div><div class="line">            arr1.push(arr[i]);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> arr1;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>4.移除数组 arr 中的所有值与 item 相等的元素，直接在给定的 arr 数组上进行操作，并将结果返回<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">removeWithoutCopy</span>(<span class="params">arr, item</span>) </span>&#123;</div><div class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</div><div class="line">        <span class="keyword">if</span>(arr[i] == item)&#123;</div><div class="line">            arr.splice(i,<span class="number">1</span>);</div><div class="line">         <span class="comment">//考虑数组长度。去掉i个重复元素，数组长度-i</span></div><div class="line">             i--;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> arr;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>5.在数组 arr 末尾添加元素 item。不要直接修改数组 arr，结果返回新的数组<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">append</span>(<span class="params">arr, item</span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> arr1 = [];</div><div class="line">  arr1 = arr.concat([item]);</div><div class="line">  <span class="keyword">return</span> arr1;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>6.删除数组 arr 最后一个元素。不要直接修改数组 arr，结果返回新的数组<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">truncate</span>(<span class="params">arr</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> arr.slice(<span class="number">0</span>, <span class="number">-1</span>);</div><div class="line"><span class="comment">//slice：指定一个数组中的元素，创建一个新的数组原数组不变</span></div><div class="line"><span class="comment">//splice：对数组原身的操作，返回值为被操作的值</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>7.在数组 arr 开头添加元素 item。不要直接修改数组 arr，结果返回新的数组<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">prepend</span>(<span class="params">arr, item</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> [item].concat(arr);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>8.删除数组 arr 第一个元素。不要直接修改数组 arr，结果返回新的数组<br>function curtail(arr) {<br>  return arr.slice(1);<br>}<br>9.合并数组 arr1 和数组 arr2。不要直接修改数组 arr，结果返回新的数组<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">concat</span>(<span class="params">arr1, arr2</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> arr1.concat(arr2);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>10.合并数组 arr1 和数组 arr2。不要直接修改数组 arr，结果返回新的数组\<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">concat</span>(<span class="params">arr1, arr2</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> arr1.concat(arr2);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>11.在数组 arr 的 index 处添加元素 item。不要直接修改数组 arr，结果返回新的数组<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">insert</span>(<span class="params">arr, item, index</span>) </span>&#123;</div><div class="line">     <span class="keyword">return</span> arr.slice(<span class="number">0</span>,index).concat(item).concat(arr.slice(index));</div><div class="line">&#125;</div><div class="line"><span class="number">12.</span>统计数组 arr 中值等于 item 的元素出现的次数</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">count</span>(<span class="params">arr, item</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> num = <span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</div><div class="line">        <span class="keyword">if</span>(arr[i] == item)&#123;</div><div class="line">            num ++;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> num;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>13.找出数组 arr 中重复出现过的元素<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">duplicates</span>(<span class="params">arr</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> a = [];</div><div class="line">    <span class="comment">//先排序，如果后一个与前一个相等且未保存，则保存。</span></div><div class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;arr.length;i++)</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> j=i+<span class="number">1</span>;j&lt;arr.length;j++)&#123;</div><div class="line">            arr[i]==arr[j]&amp;&amp;a.indexOf(arr[i])==<span class="number">-1</span>&amp;&amp;a.push(arr[i]);</div><div class="line">        &#125;</div><div class="line">    <span class="keyword">return</span> a;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>14.为数组 arr 中的每个元素求二次方。不要直接修改数组 arr，结果返回新的数组<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">square</span>(<span class="params">arr</span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> a = [];</div><div class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i&lt; arr.length; i++)&#123;</div><div class="line">      a[i] = arr[i] * arr[i];</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> a;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>15.在数组 arr 中，查找值与 item 相等的元素出现的所有位置<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">findAllOccurrences</span>(<span class="params">arr, target</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> a = [];</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</div><div class="line">        <span class="keyword">if</span>(target == arr[i])&#123;</div><div class="line">            a.push(i);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> a;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -191,95 +203,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://wynode.com/2017/07/12/javascript-array-md/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/02/mapalbum-md/" class="archive-article-date">
-  	<time datetime="2017-04-02T14:42:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-02</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/02/mapalbum-md/">使用百度地图API创建的一个小应用————地图相册。</a>
-    </h1>
+  
+    <a href="/2017/04/02/mapalbum-md/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">使用百度地图API创建的一个小应用————地图相册。</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="javascript-array-md" data-title="JavaScript编程题 —— 数组篇" data-url="http://wynode.com/2017/07/12/javascript-array-md/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"wynode"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//coding.net/u/wynode/p/jtwj/git/raw/master/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0]
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">-技术类 -baiduditu API -WEB</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/14/chrome-extension-dzsq/" class="archive-article-date">
-  	<time datetime="2017-03-14T12:10:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/14/chrome-extension-dzsq/">点赞神器(说说and微博管理助手)———快速送上你的赞 丨 清空年少的过往。</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">-技术类 -chrome extension</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -302,8 +325,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
