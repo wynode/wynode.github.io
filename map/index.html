@@ -9,7 +9,7 @@
     <script src="http://api.map.baidu.com/library/RichMarker/1.2/src/RichMarker.js"></script>
     <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchControl/1.4/src/SearchControl_min.css" />
     <style>
-        html { height: 100% } body { height: 100%; margin: 0px; padding: 0px; text-align: center; } #container { height: 100% } #searchBox { position: absolute; width: 70%; top: 2%; left: 10%; z-index: 10; }.BMap_cpyCtrl { display: none!important; } #bg-container { left: 0; right: 0; top: 0; bottom: 0; background-color: #000; opacity: 0.5; position: fixed; z-index: 20; visibility: hidden; } #album { position: absolute; z-index: 30; width: 900px; left: 50%; margin-left: -500px; margin-top: 100px; visibility: hidden; } #imageDiv { display: inline-block; width: 600px; height: 600px; position: relative; } #mainImg { min-width: 300px; max-width: 600px; min-height: 330px; max-height: 600px; position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); } #album p { position: absolute; top: -50px; left: 100px; color: #000; } #closeBg { width: 50px; height: 50px; position: absolute; right: 75px; top: -25px; opacity: .7; cursor: pointer; } #closeBg:hover { opacity: 1; } #pre { width: 50px; height: 50px; display: inline-block; position: absolute; top: 275px; left: 50px; opacity: .7; cursor: pointer; } #pre:hover { opacity: 1; } #next { width: 50px; height: 50px; display: inline-block; position: absolute; top: 275px; right: 50px; opacity: .7; cursor: pointer; } #next:hover { opacity: 1; } #viewT { width: 800px; height: 95px; overflow: hidden; margin-left: 50px; margin-top: 20px; } #thumbnail { width: 10000px; height: 95px; padding: 0; text-align: center; margin: 0; clear: both; } #thumbnail li { list-style: none; position: relative; float: left; width: 95px; height: 95px; box-sizing: border-box; margin-right: 5px; } #thumbnail img { min-width: 50px; max-width: 89px; min-height: 50px; max-height: 89px; position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); } #left { width: 25px; height: 50px; position: absolute; left: 0; bottom: 80px; cursor: pointer; } #right { width: 25px; height: 50px; position: absolute; right: 0; bottom: 80px; cursor: pointer; } #addImg { width: 100px; height: 40px; background: url(images/scbg.png) no-repeat; background-size: 100px; cursor: pointer; margin-left: 45%; margin-top: 20px; } #addImg:hover { background: url(images/scbga.png) no-repeat; background-size: 100px; } #on { border: 3px solid #252524; transform: scale(0.9, 0.9); } .BMap_Marker { display: none; } span[unselectable="on"] { display: none; } .BMap_pop { display: none; } .BMap_shadow { display: none; }
+        html { height: 100% } body { height: 100%; margin: 0px; padding: 0px; text-align: center; } #container { height: 100% } #searchBox { position: absolute; width: 70%; top: 2%; left: 10%; z-index: 10; }.BMap_cpyCtrl { display: none!important; } #bg-container { left: 0; right: 0; top: 0; bottom: 0; background-color: #000; opacity: 0.5; position: fixed; z-index: 20; visibility: hidden; } #album { position: absolute; z-index: 30; width: 900px; left: 50%; margin-left: -500px; margin-top: 100px; visibility: hidden; } #imageDiv { display: inline-block; width: 600px; height: 600px; position: relative; } #mainImg { min-width: 300px; max-width: 600px; min-height: 330px; max-height: 600px; position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); } #album p { position: absolute; top: -50px; left: 100px; color: #000; } #closeBg { width: 50px; height: 50px; position: absolute; right: 75px; top: -25px; opacity: .7; cursor: pointer; } #closeBg:hover { opacity: 1; } #pre { width: 50px; height: 50px; display: inline-block; position: absolute; top: 275px; left: 50px; opacity: .7; cursor: pointer; } #pre:hover { opacity: 1; } #next { width: 50px; height: 50px; display: inline-block; position: absolute; top: 275px; right: 50px; opacity: .7; cursor: pointer; } #next:hover { opacity: 1; } #viewT { width: 800px; height: 95px; overflow: hidden; margin-left: 50px; margin-top: 20px; } #thumbnail { width: 10000px; height: 95px; padding: 0; text-align: center; margin: 0; clear: both; } #thumbnail li { list-style: none; position: relative; float: left; width: 95px; height: 95px; box-sizing: border-box; margin-right: 5px; } #thumbnail img { min-width: 50px; max-width: 89px; min-height: 50px; max-height: 89px; position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); } #left { width: 25px; height: 50px; position: absolute; left: 0; bottom: 80px; cursor: pointer; } #right { width: 25px; height: 50px; position: absolute; right: 0; bottom: 80px; cursor: pointer; } #addImg { width: 100px; height: 40px; background: url(images/scbg.png) no-repeat; background-size: 100px; cursor: pointer; margin-left: 45%; margin-top: 20px; } #addImg:hover { background: url(images/scbga.png) no-repeat; background-size: 100px; } #on { border: 3px solid #252524; transform: scale(0.9, 0.9); } .BMap_Marker { display: none; } span[unselectable="on"] { display: none; }
     </style>
 </head>
 <body>
@@ -535,6 +535,49 @@
             objectStore.add(user);
         }
     }
+    //忽略拖拽过程中接触的事件
+    function ignoreDrag(e) {
+      //确保没有其他元素会取得这个事件
+      e.stopPropagation();
+      e.preventDefault();
+    }
+    //取得拖拽的图片
+    function drop(e) {
+      //取消事件传播及默认行为
+      e.stopPropagation();
+      e.preventDefault();
+      
+      //取得拖进来的文件
+      var data = e.dataTransfer;
+      var files = data.files;
+      //将其传给真正的处理文件的函数
+      addDropImgUrl(files);
+    }
+    //添加拖拽图片
+    function addDropImgUrl(files){
+        rFilter = /^(?:image\/bmp|image\/cis\-cod|image\/gif|image\/ief|image\/jpeg|image\/jpeg|image\/jpeg|image\/pipeg|image\/png|image\/svg\+xml|image\/tiff|image\/x\-cmu\-raster|image\/x\-cmx|image\/x\-icon|image\/x\-portable\-anymap|image\/x\-portable\-bitmap|image\/x\-portable\-graymap|image\/x\-portable\-pixmap|image\/x\-rgb|image\/x\-xbitmap|image\/x\-xpixmap|image\/x\-xwindowdump)$/i;
+        var oFile = files[0];
+        if (!rFilter.test(oFile.type)) { alert("需要一张图片哦"); return; }
+        var reader = new FileReader();
+        //将文件以Data URL形式读入页面
+        reader.readAsDataURL(oFile);
+        reader.onload = function(e){
+            let imgData = e.target.result;
+            let thumbnail = document.getElementById("thumbnail");
+            let li = document.createElement("li");
+            let newImg = document.createElement("img");
+            newImg.setAttribute("src",imgData);
+            newImg.setAttribute("onclick","imgOn(this)");
+            li.appendChild(newImg);
+            thumbnail.appendChild(li);  
+            cursorUpdateData(curDb,"albumPoint",index,imgData)
+            let i = thumbnail.getElementsByTagName("li");
+            if(i.length > 8){
+                document.getElementById('left').style.visibility = "visible";
+                document.getElementById('right').style.visibility = "visible";
+            }
+        }
+    }
 
     //创建和初始化地图
     initMap();
@@ -563,5 +606,9 @@
         menu.addItem(new BMap.MenuItem(txtMenuItem[i].text,txtMenuItem[i].callback,100));
     }
     map.addContextMenu(menu);
+    dropBox = document.getElementById("album");
+    dropBox.ondragenter = ignoreDrag;
+    dropBox.ondragover = ignoreDrag;
+    dropBox.ondrop = drop;
 </script>
 </html>
