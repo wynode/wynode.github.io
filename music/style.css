@@ -1,0 +1,612 @@
+#spinner-outer
+{
+	position: absolute;
+	left: 60px;
+	bottom: 60px;
+}
+
+#spinner-outer.hidden
+{
+	display: none;
+}
+
+#spinner
+{
+	-webkit-animation: rotator 1.4s linear infinite;
+	-moz-animation: rotator 1.4s linear infinite;
+	-o-animation: rotator 1.4s linear infinite;
+	animation: rotator 1.4s linear infinite;
+}
+
+@-webkit-keyframes rotator
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(270deg);
+	}
+}
+
+@-moz-keyframes rotator
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(270deg);
+	}
+}
+
+@-o-keyframes rotator
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(270deg);
+	}
+}
+
+@keyframes rotator
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(270deg);
+	}
+}
+
+.path
+{
+	stroke: #4285F4;
+	stroke-dasharray: 80;
+	stroke-dashoffset: 0;
+	transform-origin: center;
+	-webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+	-moz-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+	-o-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+	animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}
+
+@-webkit-keyframes colors
+{
+	0%
+	{
+		stroke: #4285F4;
+	}
+	22%
+	{
+		stroke: #4285F4;
+	}
+	28%
+	{
+		stroke: #DE3E35;
+	}
+	47%
+	{
+		stroke: #DE3E35;
+	}
+	53%
+	{
+		stroke: #F7C223;
+	}
+	72%
+	{
+		stroke: #F7C223;
+	}
+	78%
+	{
+		stroke: #1B9A59;
+	}
+}
+
+/*@-moz-keyframes colors
+{
+	0%
+	{
+		stroke: #4285F4;
+	}
+	25%
+	{
+		stroke: #DE3E35;
+	}
+	50%
+	{
+		stroke: #F7C223;
+	}
+	75%
+	{
+		stroke: #1B9A59;
+	}
+	100%
+	{
+		stroke: #4285F4;
+	}
+}
+
+@-o-keyframes colors
+{
+	0%
+	{
+		stroke: #4285F4;
+	}
+	25%
+	{
+		stroke: #DE3E35;
+	}
+	50%
+	{
+		stroke: #F7C223;
+	}
+	75%
+	{
+		stroke: #1B9A59;
+	}
+	100%
+	{
+		stroke: #4285F4;
+	}
+}
+
+@keyframes colors
+{
+	0%
+	{
+		stroke: #4285F4;
+	}
+	25%
+	{
+		stroke: #DE3E35;
+	}
+	50%
+	{
+		stroke: #F7C223;
+	}
+	75%
+	{
+		stroke: #1B9A59;
+	}
+	100%
+	{
+		stroke: #4285F4;
+	}
+}*/
+
+@-webkit-keyframes dash
+{
+	0%
+	{
+		stroke-dashoffset: 80;
+	}
+	50%
+	{
+		stroke-dashoffset: 20;
+		transform:rotate(135deg);
+	}
+	100%
+	{
+		stroke-dashoffset: 80;
+		transform:rotate(450deg);
+	}
+}
+
+@-moz-keyframes dash
+{
+	0%
+	{
+		stroke-dashoffset: 80;
+	}
+	50%
+	{
+		stroke-dashoffset: 10;
+		transform:rotate(135deg);
+	}
+	100%
+	{
+		stroke-dashoffset: 80;
+		transform:rotate(450deg);
+	}
+}
+
+@-o-keyframes dash
+{
+	0%
+	{
+		stroke-dashoffset: 80;
+	}
+	50%
+	{
+		stroke-dashoffset: 10;
+		transform:rotate(135deg);
+	}
+	100%
+	{
+		stroke-dashoffset: 80;
+		transform:rotate(450deg);
+	}
+}
+
+@keyframes dash
+{
+	0%
+	{
+		stroke-dashoffset: 80;
+	}
+	50%
+	{
+		stroke-dashoffset: 10;
+		transform:rotate(135deg);
+	}
+	100%
+	{
+		stroke-dashoffset: 80;
+		transform:rotate(450deg);
+	}
+}
+
+
+*
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	margin: 0;
+	padding: 0;
+}
+
+html, body
+{
+	background-color: #EEEEEE;
+}
+
+
+
+#chooser
+{
+	position: absolute;
+	transition: opacity 1s ease, visibility 1s ease;
+	opacity: 1;
+	visibility: visible;
+}
+
+#scene,#back,#tool,#canvasOne,#canvasTwo{
+	transition: opacity 1s ease, visibility 1s ease;
+	opacity: 1;
+	visibility: visible;
+}
+
+#chooser{
+	position: absolute;
+	overflow: hidden;
+	width: 700px;
+	height: 320px;
+	top: 50%;
+	left: 50%;
+	margin-top: -160px;
+	margin-left: -350px;
+	box-sizing: border-box;
+}
+#chooser.hidden, #scene.hidden,#back.hidden,#tool.hidden,#canvasOne.hidden,#canvasTwo.hidden
+{
+	opacity: 0;
+	visibility: hidden;
+}
+
+#chooser-dialog
+{
+	position: absolute;
+	overflow: hidden;
+	width: 300px;
+	height: 300px;
+	top: 5px;
+	left: 10px;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	padding: 50px 20px 0 45px;
+	box-sizing: border-box;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+	/*box-shadow: 0 17px 17px 0 rgba(0, 0, 0, 0.15), 0 27px 55px 0 rgba(0, 0, 0, 0.3);*/
+}
+
+#listener
+{
+	position: absolute;
+	overflow: hidden;
+	width: 300px;
+	height: 300px;
+	top: 5px;
+	right: 10px;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	padding: 20px 20px 0 20px;
+	box-sizing: border-box;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+	/*box-shadow: 0 17px 17px 0 rgba(0, 0, 0, 0.15), 0 27px 55px 0 rgba(0, 0, 0, 0.3);*/
+}
+
+#listener button{
+	outline: none;
+	display: block;
+	border: none;
+	background-color: transparent;
+	padding: 10px 10px 16px 30px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	margin-top: 100px;
+	color: #4285F4;
+	background-color: #FFFFFF;
+	cursor: pointer;
+	transition: background-color 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#tool{
+	position: absolute;
+	bottom: 10px;
+	left: 40%;
+}
+#tool button{
+	outline: none;
+	display: inline-block;
+	border: 1px solid #fff;
+	background-color: transparent;
+	padding: 5px 10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	margin-left: 50px;
+	color: #fff;
+	background-color: #eeeeee;
+	cursor: pointer;
+	transition: background-color 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#tool p{
+	color: #fff;
+	display: inline-block;
+	margin-right: 10px;
+}
+#chooser-dialog h2
+{
+	margin: 0 0 5px 0;
+	font-size: 20px;
+	font-weight: 500;
+}
+#chooser-dialog #h2{
+	padding-left: 30px;
+	margin-bottom: 15px;
+}
+#drop{
+	position: absolute;
+
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+#a-upload {
+    padding: 4px 10px;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 65px;
+}
+
+#a-upload  input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+    display: block;
+	height: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+#a-upload:hover {
+    color: #444;
+    background: #eee;
+    border-color: #ccc;
+    text-decoration: none
+}
+
+#chooser-dialog p
+{
+	height: 50px;
+	color: #888888;
+	font-size: 14px;
+	margin-left: 5px;
+}
+#chooser-dialog #musicName{
+	height: 20px;
+	color: #000;
+	font-size: 14px;
+	line-height: 20px;
+}
+#chooser-dialog button
+{
+	outline: none;
+	display: block;
+	border: none;
+	background-color: transparent;
+	padding: 10px 20px 16px 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+	margin-top: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	width: 140px;
+	box-sizing: border-box;
+	margin-left: 100px;
+	color: #4285F4;
+	background-color: #FFFFFF;
+	cursor: pointer;
+	transition: background-color 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#chooser #chooser-dialog button:active
+{
+	background-color: #EEEEEE;
+}
+
+#chooser #chooser-dialog button.disabled
+{
+	background-color: #FFFFFF;
+	cursor: default;
+	color: #CCCCCC;
+}
+
+#scene #scene-canvas
+{
+	position: absolute;
+	width: 600px;
+	height: 600px;
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -300px;
+	/*outline: 1px dashed #CCCCCC;*/
+}
+
+#listenCanvas {
+	transition: opacity 1s ease, visibility 1s ease;
+}
+#listenCanvas canvas{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -300px;
+}
+
+#listenCanvas #canvasTwo{
+	margin-top: -450px;
+	margin-left: 0;
+	left: 0;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    margin-top: -5px; /*使滑块超出轨道部分的偏移量相等*/
+    background: #ffffff; 
+    border-radius: 50%; /*外观设置为圆形*/
+    border: solid 0.125em rgba(205, 224, 230, 0.5); /*设置边框*/
+    box-shadow: 0 .125em .125em #3b4547; /*添加底部阴影*/
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    height: 15px;
+    border-radius: 10px; /*将轨道设为圆角的*/
+    box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em #0d1112; /*轨道内置阴影效果*/
+}
+
+#error
+{
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.25);
+	transition: opacity 0.28s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+	opacity: 1;
+	visibility: visible;
+}
+
+#error #error-dialog
+{
+	position: absolute;
+	overflow: hidden;
+	width: 300px;
+	height: 150px;
+	top: 50%;
+	left: 50%;
+	margin-top: -75px;
+	margin-left: -150px;
+	background-color: #FFFFFF;
+	border-radius: 3px;
+	padding: 20px 20px 0 20px;
+	box-sizing: border-box;
+	/*box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);*/
+	box-shadow: 0 17px 17px 0 rgba(0, 0, 0, 0.15), 0 27px 55px 0 rgba(0, 0, 0, 0.3);
+	transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+	transform: translate(0, 0);
+}
+
+#error.hidden
+{
+	opacity: 0;
+	visibility: hidden;
+}
+
+#error.hidden #error-dialog
+{
+	transform: translate(0, -200px);
+}
+
+#error #error-dialog h1
+{
+	height: 30px;
+	margin: 0 0 15px 0;
+	font-size: 23px;
+	font-weight: 500;
+}
+
+#error #error-dialog p
+{
+	height: 40px;
+	color: #666666;
+	font-size: 15px;
+}
+
+#error #error-dialog button
+{
+	outline: none;
+	display: block;
+	border: none;
+	background-color: transparent;
+	padding: 10px 20px 16px 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	width: 80px;
+	box-sizing: border-box;
+	margin-left: 186px;
+	color: #4285F4;
+	background-color: #FFFFFF;
+	cursor: pointer;
+	transition: background-color 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#error #error-dialog button:active
+{
+	background-color: #EEEEEE;
+}

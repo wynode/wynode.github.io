@@ -10,17 +10,98 @@
   <meta name="baidu-site-verification" content="m0FfH7fnLK" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://wynode.com">
-  <title>Archives: 2017/7 | wynode的博客</title>
+  <title>wynode的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="CS专业在校学生，喜欢前端，向着Full Stack Engineer进发。嗯，还有想成为一名作家的梦。">
+  <meta name="description" content="Document
+		
+		
+
+	
+	
+		
+		
+			
+				
+				
+				确定
+			
+		
+		
+			
+				选择一首音乐到本页面
+				（支持拖拽哦）
+				
+   					上传文件
+				
+				
+				开始播放
+				ps：可以使用鼠标滚轮控制音量
+			
+			
+				使用麦克风作为输入源">
 <meta property="og:type" content="website">
 <meta property="og:title" content="wynode的博客">
-<meta property="og:url" content="http://wynode.com/archives/2017/07/index.html">
+<meta property="og:url" content="http://wynode.com/music/index.html">
 <meta property="og:site_name" content="wynode的博客">
-<meta property="og:description" content="CS专业在校学生，喜欢前端，向着Full Stack Engineer进发。嗯，还有想成为一名作家的梦。">
+<meta property="og:description" content="Document
+		
+		
+
+	
+	
+		
+		
+			
+				
+				
+				确定
+			
+		
+		
+			
+				选择一首音乐到本页面
+				（支持拖拽哦）
+				
+   					上传文件
+				
+				
+				开始播放
+				ps：可以使用鼠标滚轮控制音量
+			
+			
+				使用麦克风作为输入源">
+<meta property="og:image" content="http://wynode.com/back.png">
+<meta property="og:updated_time" content="2017-10-20T11:51:03.634Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="wynode的博客">
-<meta name="twitter:description" content="CS专业在校学生，喜欢前端，向着Full Stack Engineer进发。嗯，还有想成为一名作家的梦。">
+<meta name="twitter:description" content="Document
+		
+		
+
+	
+	
+		
+		
+			
+				
+				
+				确定
+			
+		
+		
+			
+				选择一首音乐到本页面
+				（支持拖拽哦）
+				
+   					上传文件
+				
+				
+				开始播放
+				ps：可以使用鼠标滚轮控制音量
+			
+			
+				使用麦克风作为输入源">
+<meta name="twitter:image" content="http://wynode.com/back.png">
   
     <link rel="alternative" href="/atom.xml" title="wynode的博客" type="application/atom+xml">
   
@@ -150,60 +231,142 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="page-undefined" class="article article-type-page " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+
+	</head>
+	<body>
+		<div id="drop"></div>
+		<div id="error" class="hidden">
+			<div id="error-dialog">
+				<h1 id="error-title"></h1>
+				<p id="error-text"></p>
+				<button id="error-button">确定</button>
+			</div>
+		</div>
+		<div id="chooser">
+			<div id="chooser-dialog">
+				<h2>选择一首音乐到本页面</h2>
+				<h2 id="h2">（支持拖拽哦）</h2>
+				<a href="javascript:;" id="a-upload" target="_blank" rel="external">
+   					<input type="file" name="" id="chooser-input">上传文件
+				</a>
+				<p id="musicName"></p>
+				<div id="spinner-outer" class="hidden"><svg id="spinner" width="30" height="30" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><circle class="path" fill="none" stroke-width="2" stroke-linecap="round" cx="15" cy="15" r="13"/></svg></div><button id="chooser-button">开始播放</button>
+				<p>ps：可以使用鼠标滚轮控制音量</p>
+			</div>
+			<div id="listener">
+				<button id="listenBtn" onclick="playOne()">使用麦克风作为输入源</button>
+			</div>
+		</div>
+
+		<div id="scene" class="hidden">
+			<canvas width="600" height="600" id="scene-canvas"></canvas>
+		</div>
+		<div id="listenCanvas">
+			<canvas width="600" height="600" id="canvasOne" class="hidden"></canvas>
+			<canvas width="600" height="600" id="canvasTwo" class="hidden"></canvas>
+		</div>
+		<div id="tool" class="hidden">
+		<p>音量:</p><input type="range" id="range" value="0">
+		<button id="toggle">切换样式</button>
+		</div>
+		<a href="javascript:location.reload()" id="back" class="hidden" target="_blank" rel="external"><img src="back.png" alt="返回" style="width: 70px;height: 50px;position: absolute;right: 10px;"></a> 
+	</body>
+</html>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/12/javascript-array-md/" class="archive-article-date">
-  	<time datetime="2017-07-12T12:45:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/12/javascript-array-md/">JavaScript编程题 —— 数组篇</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-JavaScript -数组</a>
-        		</li>
-      		
-		</ul>
-	</div>
+      
 
-          
-
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://wynode.com/music/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
+
   
 
-    
+
+
+
+
+  
+  <!-- UY BEGIN -->
+<div id="uyan_frame" style="width: 94%;margin-left: 3%"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2139802"></script>
+<!-- UY END -->
+  
+
+
 
 
           </div>
@@ -227,7 +390,7 @@
 		mathjax: false,
 		isHome: false,
 		isPost: false,
-		isArchive: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

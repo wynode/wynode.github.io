@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wynode.com/music/style.css</loc>
+    
+    <lastmod>2017-10-20T12:06:03.852Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wynode.com/music/script.js</loc>
+    
+    <lastmod>2017-10-20T11:51:15.702Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wynode.com/music/index.html</loc>
+    
+    <lastmod>2017-10-20T11:51:03.634Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wynode.com/2017/09/25/sublime/</loc>
     
     <lastmod>2017-10-17T11:24:07.281Z</lastmod>
