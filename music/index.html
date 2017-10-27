@@ -28,7 +28,7 @@
 				<p>ps：可以使用鼠标滚轮控制音量</p>
 			</div>
 			<div id="listener">
-				<button id="listenBtn" onclick="playOne()">使用麦克风作为输入源</button>
+				<button id="listenBtn">使用麦克风作为输入源</button>
 			</div>
 		</div>
 
@@ -89,6 +89,7 @@ var toggle;
 var animationOne;
 var animationTwo;
 var flag = 1;
+var listenBtn;
 
 window.onload = function()
 {
@@ -136,6 +137,8 @@ window.onload = function()
 	
 	document.getElementById("error-button").onclick = cbErrorButtonClick;
 
+	listenBtn = document.getElementById("listenBtn");
+	listenBtn.onclick = playOne;
 	canvasOne = document.getElementById('canvasOne');
     ctx1 = canvasOne.getContext("2d");
 
