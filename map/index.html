@@ -230,6 +230,67 @@ layout: false
 
                         };
                     });
+                    overLay.getElementsByClassName('image1')[0].addEventListener('touchend',function(){
+                        map.panTo(markerPoint);
+                        if(map.getZoom() < 11){
+                         setTimeout(function(){
+                         map.setZoom(12);
+                          }, 1000);  //1秒后放大到12级
+                        }
+                        if(curLat.toFixed(1) == map.getCenter().lat.toFixed(1)){
+                            let tran = curDb.transaction(["albumPoint"],"readwrite");
+                            let objectStore = tran.objectStore("albumPoint");
+                            let getId = objectStore.get(count-1);
+                            getId.onsuccess = function(e){
+                                let reqJsonObj = e.target.result;
+                                geoc.getLocation(markerPoint, function(rs){
+                                    var addComp = rs.addressComponents;
+                                    var album = document.getElementById('album');
+                                    var bg = document.getElementById('bg-container');
+                                    bg.style.visibility = 'visible';
+                                    album.style.visibility = 'visible';
+                                    var text = addComp.province + " " + addComp.city + " " + addComp.district + " " + addComp.street + " " + addComp.streetNumber;
+                                    album.getElementsByTagName('p')[0].innerHTML = text;
+                                    document.getElementById('mainImg').setAttribute("src",reqJsonObj.url0);
+                                    index = reqJsonObj.id;
+                                    var thumbnail = document.getElementById('thumbnail')
+                                    thumbnail.innerHTML = "";
+                                    for (let i = 0; i <= 30; i++) {
+                                        let url = 'url'+i;
+                                        if(reqJsonObj[url]){
+                                            if( i == 0 ){
+
+                                                let li = document.createElement("li");
+                                                li.setAttribute("id","on");
+                                                let newImg = document.createElement("img");
+                                                newImg.setAttribute("src",reqJsonObj[url]);
+                                                newImg.setAttribute("onclick","imgOn(this)");
+                                                li.appendChild(newImg);
+                                                thumbnail.appendChild(li);
+                                            }else {
+                                                let li = document.createElement("li");
+                                                let newImg = document.createElement("img");
+                                                newImg.setAttribute("src",reqJsonObj[url]);
+                                                newImg.setAttribute("onclick","imgOn(this)");
+                                                li.appendChild(newImg);
+                                                thumbnail.appendChild(li);
+                                                if(i > 7){
+                                                    document.getElementById('left').style.visibility = "visible";
+                                                    document.getElementById('right').style.visibility = "visible";
+                                                }
+                                            }
+                                        }else{
+                                            return;
+                                        }
+
+                                    }
+
+                                });    
+
+                            }
+
+                        };
+                    });
                     var data = {
                         id:count,
                         lng:curLng,
@@ -495,6 +556,68 @@ layout: false
                         }       
                     };
                 });
+
+
+                overLay.getElementsByClassName('image1')[0].addEventListener('touchend',function(){
+                    map.panTo(markerPoint);
+                    if(map.getZoom() < 11){
+                     setTimeout(function(){
+                     map.setZoom(12);
+                      }, 1000);  //1秒后放大到12级
+                    }
+                    if(reqObj.lat.toFixed(1) == map.getCenter().lat.toFixed(1)){
+                        let tran = curDb.transaction(["albumPoint"],"readwrite");
+                        let objectStore = tran.objectStore("albumPoint");
+                        let getId = objectStore.get(reqObj.id);
+                        getId.onsuccess = function(e){
+                            let reqJsonObj = e.target.result;
+                            geoc.getLocation(markerPoint, function(rs){
+                                var addComp = rs.addressComponents;
+                                var album = document.getElementById('album');
+                                var bg = document.getElementById('bg-container');
+                                bg.style.visibility = 'visible';
+                                album.style.visibility = 'visible';
+                                var text = addComp.province + " " + addComp.city + " " + addComp.district + " " + addComp.street + " " + addComp.streetNumber;
+                                album.getElementsByTagName('p')[0].innerHTML = text;
+                                document.getElementById('mainImg').setAttribute("src",reqJsonObj.url0);
+                                index = reqJsonObj.id;
+                                var thumbnail = document.getElementById('thumbnail')
+                                thumbnail.innerHTML = "";
+                                for (let i = 0; i <= 30; i++) {
+                                    let url = 'url'+i;
+                                    if(reqJsonObj[url]){
+                                        if( i == 0 ){
+                                            let li = document.createElement("li");
+                                            li.setAttribute("id","on");
+                                            let newImg = document.createElement("img");
+                                            newImg.setAttribute("src",reqJsonObj[url]);
+                                            newImg.setAttribute("onclick","imgOn(this)");
+                                            li.appendChild(newImg);
+                                            thumbnail.appendChild(li);
+                                        }else {
+                                            let li = document.createElement("li");
+                                            let newImg = document.createElement("img");
+                                            newImg.setAttribute("src",reqJsonObj[url]);
+                                            newImg.setAttribute("onclick","imgOn(this)");
+                                            li.appendChild(newImg);
+                                            thumbnail.appendChild(li);
+                                            if(i > 7){
+                                                document.getElementById('left').style.visibility = "visible";
+                                                document.getElementById('right').style.visibility = "visible";
+                                            }
+                                        }
+                                    }else{
+                                        return;
+                                    }
+
+                                }
+
+                            });    
+
+                        }       
+                    };
+                });
+
             }
 
         }
@@ -590,9 +713,10 @@ layout: false
     window.onload = createDB();
     //将当前右键位置信息传入到curPoint数组
     var curPoint = new Array;
-    map.addEventListener("rightclick", function(e){
-            curPoint.lng = e.point.lng;
-            curPoint.lat = e.point.lat;
+     map.addEventListener("rightclick", function(e){
+
+             curPoint.lng = e.point.lng;
+             curPoint.lat = e.point.lat;
      });
     //添加右键菜单
     var menu = new BMap.ContextMenu();
@@ -613,5 +737,53 @@ layout: false
     dropBox.ondragenter = ignoreDrag;
     dropBox.ondragover = ignoreDrag;
     dropBox.ondrop = drop;
+    function touchend(){
+  
+        document.getElementById('file').click();
+  
+          map.removeEventListener('touchend',touchend);
+       
+    }
+    map.addEventListener('longpress',function(e){
+       
+        curPoint.lng = e.point.lng;
+        curPoint.lat = e.point.lat;
+        console.log(e);
+        if(e.type == 'onlongpress'){
+         map.addEventListener('touchend', touchend);
+        }
+    
+       
+   
+    })
+//     function clickba(){
+
+//         console.log(document.getElementsByTagName('input')[0]);
+//         alert('fuck');
+//     }
+
+//     var timeOutEvent = 0;
+//     map.addEventListener('touchstart', (e) => {
+//             timeOutEvent = setTimeout("longPress()",500);
+//                console.log(e);
+//                    e.domEvent.cancelBubble = true;
+//                curPoint.lng = e.point.lng;
+//                curPoint.lat = e.point.lat;
+//           });
+
+//     map.addEventListener('touchend', (e) => {
+//             clearTimeout(timeOutEvent);
+//        e.domEvent.cancelBubble = true;
+// document.getElementsByTagName('input')[0].click();
+//             return false;
+        
+//     });
+//     function longPress(){
+//         timeOutEvent = 0;
+//          clickba();
+        
+     
+//         alert('chuangjiandituba');
+//     }
 </script>
 </html>
