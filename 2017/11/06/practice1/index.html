@@ -24,17 +24,18 @@
   <meta name="baidu-site-verification" content="m0FfH7fnLK" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://wynode.com">
-  <title>Tag: -笔试 -Web前端 | wynode的博客</title>
+  <title>晚间小练习---判断一个js变量的类型。 | wynode的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="CS专业在校学生，喜欢前端，向着Full Stack Engineer进发。嗯，还有想成为一名作家的梦。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="wynode的博客">
-<meta property="og:url" content="http://wynode.com/tags/笔试-Web前端/index.html">
+  <meta name="description" content="1.typeof和constructor使用typeof判断变量类型 缺点是不能判断null,array,date,reg,error这些类型而constructor原理为变量声明时传递构造函数的constructor，所以不能判断null和undefined两者结合使用能写出判断null以及其他引用类型的函数12345678function type_of(a) &amp;#123;  if(type">
+<meta property="og:type" content="article">
+<meta property="og:title" content="晚间小练习---判断一个js变量的类型。">
+<meta property="og:url" content="http://wynode.com/2017/11/06/practice1/index.html">
 <meta property="og:site_name" content="wynode的博客">
-<meta property="og:description" content="CS专业在校学生，喜欢前端，向着Full Stack Engineer进发。嗯，还有想成为一名作家的梦。">
+<meta property="og:description" content="1.typeof和constructor使用typeof判断变量类型 缺点是不能判断null,array,date,reg,error这些类型而constructor原理为变量声明时传递构造函数的constructor，所以不能判断null和undefined两者结合使用能写出判断null以及其他引用类型的函数12345678function type_of(a) &amp;#123;  if(type">
+<meta property="og:updated_time" content="2018-01-02T15:12:41.910Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wynode的博客">
-<meta name="twitter:description" content="CS专业在校学生，喜欢前端，向着Full Stack Engineer进发。嗯，还有想成为一名作家的梦。">
+<meta name="twitter:title" content="晚间小练习---判断一个js变量的类型。">
+<meta name="twitter:description" content="1.typeof和constructor使用typeof判断变量类型 缺点是不能判断null,array,date,reg,error这些类型而constructor原理为变量声明时传递构造函数的constructor，所以不能判断null和undefined两者结合使用能写出判断null以及其他引用类型的函数12345678function type_of(a) &amp;#123;  if(type">
   
     <link rel="alternative" href="/atom.xml" title="wynode的博客" type="application/atom+xml">
   
@@ -164,60 +165,152 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-practice1" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/06/mianshi/" class="archive-article-date">
-  	<time datetime="2017-11-06T12:42:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-06</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/06/mianshi/">笔试题目总结。</a>
+    <h1 class="article-title" itemprop="name">
+      晚间小练习---判断一个js变量的类型。
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/11/06/practice1/" class="archive-article-date">
+  	<time datetime="2017-11-06T12:42:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
+<h5 id="1-typeof和constructor"><a href="#1-typeof和constructor" class="headerlink" title="1.typeof和constructor"></a>1.typeof和constructor</h5><p>使用typeof判断变量类型 缺点是不能判断null,array,date,reg,error这些类型<br>而constructor原理为变量声明时传递构造函数的constructor，所以不能判断null和undefined<br>两者结合使用能写出判断null以及其他引用类型的函数<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">type_of</span>(<span class="params">a</span>) </span>&#123;</div><div class="line">  <span class="keyword">if</span>(<span class="keyword">typeof</span> a !== <span class="string">'object'</span>) &#123;</div><div class="line">	<span class="keyword">return</span> <span class="keyword">typeof</span> a</div><div class="line">  &#125; <span class="keyword">else</span> &#123;</div><div class="line">    <span class="keyword">if</span>(a === <span class="literal">null</span>) <span class="keyword">return</span> <span class="string">'null'</span></div><div class="line">	<span class="keyword">return</span> a.constructor.toString().slice(<span class="number">9</span>,<span class="number">-20</span>) <span class="comment">// 只取结果中的类型字段 例子ƒ Number() &#123; [native code] &#125; 为构造函数</span></div><div class="line">  &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+<h5 id="2-instanceof"><a href="#2-instanceof" class="headerlink" title="2.instanceof"></a>2.instanceof</h5><p>使用instanceof判断 (原理：检测 c.prototype 是否存在于参数 a 的原型链上)<br>优点：能够判断出多层继承关系<br>缺点：不稳定 c.prototype可以改变  还可以通过 a.__proto__ = XX 改变变量的原型链从而改变结果 不能判断null和undefined<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">instance_of</span>(<span class="params">left, right</span>) </span>&#123;</div><div class="line">  <span class="comment">//添加null和undefined检测</span></div><div class="line">  <span class="keyword">if</span>(left === <span class="literal">null</span>) <span class="keyword">return</span> <span class="string">'null'</span></div><div class="line">  <span class="keyword">if</span>(left === <span class="literal">undefined</span>) <span class="keyword">return</span> <span class="string">'undefined'</span></div><div class="line">  <span class="comment">//instanceof的内部原理</span></div><div class="line">  <span class="keyword">var</span> pro = right.prototype;<span class="comment">// 检测类型的显示原型</span></div><div class="line">  left = left.__proto__;<span class="comment">// 变量的隐式原型</span></div><div class="line">  <span class="keyword">while</span> (<span class="literal">true</span>) &#123; </div><div class="line">    <span class="keyword">if</span> (left === <span class="literal">null</span>) </div><div class="line">      <span class="keyword">return</span> <span class="literal">false</span>; </div><div class="line">    <span class="keyword">if</span> (left === pro)</div><div class="line">      <span class="keyword">return</span> <span class="literal">true</span>; </div><div class="line">    left = left.__proto__; </div><div class="line">  &#125; </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h5 id="3-使用Object-prototype-toString的方法"><a href="#3-使用Object-prototype-toString的方法" class="headerlink" title="3.使用Object.prototype.toString的方法"></a>3.使用Object.prototype.toString的方法</h5><p>es5当中的实现原理</p>
+<ol>
+<li>如果 this是undefined ，返回 [object Undefined]   </li>
+<li>如果 this是null ， 返回 [object Null]  </li>
+<li>令 O 为以 this 作为参数调用 ToObject 的结果      </li>
+<li>令 class 为 O 的内部属性 [[Class]] 的值 </li>
+<li>返回三个字符串 “[object”, class, 以及”]” 拼接而成的字符串。<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">op_toString</span>(<span class="params">a</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="built_in">Object</span>.prototype.toString.call(a).slice(<span class="number">8</span>,<span class="number">-1</span>) <span class="comment">// 只取结果中的类型字段 例子为[object Number]</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>es6当中实现原理参考<a href="https://github.com/jkchao/blog/issues/8" target="_blank" rel="external">https://github.com/jkchao/blog/issues/8</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-笔试 -Web前端</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">-变量类型 -Web前端</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://wynode.com/2017/11/06/practice1/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/11/06/mianshi/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          笔试题目总结。
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2017/10/22/mall/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">基于 vue2 + vuex 构建的一个应用---网上书城。</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+  <!-- UY BEGIN -->
+<div id="uyan_frame" style="width: 94%;margin-left: 3%"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2139802"></script>
+<!-- UY END -->
   
 
-    
+
 
 
           </div>
@@ -240,9 +333,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",
