@@ -24,25 +24,18 @@
   <meta name="baidu-site-verification" content="m0FfH7fnLK" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://wynode.com">
-  <title>音乐可视化---跟上音乐的节拍。 | wynode的博客</title>
+  <title>晚间小练习---判断一个js变量的类型。 | wynode的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="音乐也可以用来看。">
+  <meta name="description" content="1.typeof和constructor使用typeof判断变量类型 缺点是不能判断null,array,date,reg,error这些类型而constructor原理为变量声明时传递构造函数的constructor，所以不能判断null和undefined两者结合使用能写出判断null以及其他引用类型的函数12345678function type_of(a) &amp;#123;  if(type">
 <meta property="og:type" content="article">
-<meta property="og:title" content="音乐可视化---跟上音乐的节拍。">
-<meta property="og:url" content="http://wynode.com/2017/08/20/music/index.html">
+<meta property="og:title" content="晚间小练习---判断一个js变量的类型。">
+<meta property="og:url" content="http://wynode.com/2017/12/26/practice1/index.html">
 <meta property="og:site_name" content="wynode的博客">
-<meta property="og:description" content="音乐也可以用来看。">
-<meta property="og:image" content="http://ol1l09l0b.bkt.clouddn.com/music1.png">
-<meta property="og:image" content="http://ol1l09l0b.bkt.clouddn.com/music2.png">
-<meta property="og:image" content="http://ol1l09l0b.bkt.clouddn.com/music3.png">
-<meta property="og:image" content="http://ol1l09l0b.bkt.clouddn.com/music1.png">
-<meta property="og:image" content="http://ol1l09l0b.bkt.clouddn.com/music5.png">
-<meta property="og:image" content="http://ol1l09l0b.bkt.clouddn.com/music6.png">
-<meta property="og:updated_time" content="2017-10-28T06:32:49.220Z">
+<meta property="og:description" content="1.typeof和constructor使用typeof判断变量类型 缺点是不能判断null,array,date,reg,error这些类型而constructor原理为变量声明时传递构造函数的constructor，所以不能判断null和undefined两者结合使用能写出判断null以及其他引用类型的函数12345678function type_of(a) &amp;#123;  if(type">
+<meta property="og:updated_time" content="2018-01-02T15:18:22.352Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="音乐可视化---跟上音乐的节拍。">
-<meta name="twitter:description" content="音乐也可以用来看。">
-<meta name="twitter:image" content="http://ol1l09l0b.bkt.clouddn.com/music1.png">
+<meta name="twitter:title" content="晚间小练习---判断一个js变量的类型。">
+<meta name="twitter:description" content="1.typeof和constructor使用typeof判断变量类型 缺点是不能判断null,array,date,reg,error这些类型而constructor原理为变量声明时传递构造函数的constructor，所以不能判断null和undefined两者结合使用能写出判断null以及其他引用类型的函数12345678function type_of(a) &amp;#123;  if(type">
   
     <link rel="alternative" href="/atom.xml" title="wynode的博客" type="application/atom+xml">
   
@@ -172,47 +165,39 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-music" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-practice1" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      音乐可视化---跟上音乐的节拍。
+      晚间小练习---判断一个js变量的类型。
     </h1>
   
 
         
-        <a href="/2017/08/20/music/" class="archive-article-date">
-  	<time datetime="2017-08-20T12:42:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-20</time>
+        <a href="/2017/12/26/practice1/" class="archive-article-date">
+  	<time datetime="2017-12-26T12:42:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-26</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>音乐也可以用来看。</p>
-</blockquote>
-<a id="more"></a>
-<h4 id="一、使用"><a href="#一、使用" class="headerlink" title="一、使用"></a>一、使用</h4><p>PC端或者移动端点击<a href="http://www.wynode.com/music/" target="_blank" rel="external">这个网址</a>(wynode.com/music)进入主界面<br><img src="http://ol1l09l0b.bkt.clouddn.com/music1.png" alt="Alt text"><br>主界面当中有两个功能选项。</p>
-<ul>
-<li>通过上传文件（可直接拖拽音乐到页面）向页面添加一首音乐进行可视化，在页面显示出音乐的名字后点击开始播放。<br><img src="http://ol1l09l0b.bkt.clouddn.com/music2.png" alt="Alt text"><br><img src="http://ol1l09l0b.bkt.clouddn.com/music3.png" width="935"></li>
-<li>使用麦克风作为输入源进行可视化。<br><img src="http://ol1l09l0b.bkt.clouddn.com/music1.png" alt="music"><br><img src="http://ol1l09l0b.bkt.clouddn.com/music5.png" width="935"></li>
-</ul>
-<h4 id="二、过程"><a href="#二、过程" class="headerlink" title="二、过程"></a>二、过程</h4><p>大抵从很早听MP3的时候就产生的想法———一首音乐究竟是由什么组成的，MP3上炫酷的随音乐波动画面是怎么做到的。<br><img src="http://ol1l09l0b.bkt.clouddn.com/music6.png" alt="Alt text"></p>
-<p>直到后面学了计算机，才了解到一点，计算机里的万物皆会化为二进制。所以我们听到的音乐，在计算机看来只是一长串的二进制数据，再思考随音乐的波动画面，便不能推出，那只是一串二进制转化为不同高度的频段图。</p>
-<p>大二一个偶然的机会看到了一个<a href="https://www.apexvj.com/v3/" target="_blank" rel="external">音乐可视化网站</a>3D的可视化效果非常惊艳，梦想着自己有一天也能做一个这么酷炫的网站。随着前端学习的不断深入，我感觉到是时候实现梦想的第一步了。通过各种搜索引擎找到自己需要了解的技术，一步步学习，最后简单实现了一个小demo。就是这个了。</p>
-<h4 id="三、技术整理"><a href="#三、技术整理" class="headerlink" title="三、技术整理"></a>三、技术整理</h4><p>全站主要用到的技术：</p>
-<ul>
-<li>AudioContext</li>
-<li>Canvas</li>
-<li>FileReader</li>
-<li>navigator的getUserMedia方法</li>
-</ul>
-<p>参考资料：<br><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/AudioContext" target="_blank" rel="external">https://developer.mozilla.org/zh-CN/docs/Web/API/AudioContext</a>     // AudioContext - Web API 接口<br><a href="http://www.cnblogs.com/Wayou/p/3543577.html" target="_blank" rel="external">http://www.cnblogs.com/Wayou/p/3543577.html</a>   //简单的音乐可视化全过程<br><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial" target="_blank" rel="external">https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial</a> //Canvas的基本使用</p>
-<h4 id="四、源码"><a href="#四、源码" class="headerlink" title="四、源码"></a>四、源码</h4><p>这个项目的源码我已经上传到<a href="https://github.com/wynode" target="_blank" rel="external">我的github</a>上，欢迎大家给我提Issue。</p>
+        <a id="more"></a>
+<h5 id="1-typeof和constructor"><a href="#1-typeof和constructor" class="headerlink" title="1.typeof和constructor"></a>1.typeof和constructor</h5><p>使用typeof判断变量类型 缺点是不能判断null,array,date,reg,error这些类型<br>而constructor原理为变量声明时传递构造函数的constructor，所以不能判断null和undefined<br>两者结合使用能写出判断null以及其他引用类型的函数<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">type_of</span>(<span class="params">a</span>) </span>&#123;</div><div class="line">  <span class="keyword">if</span>(<span class="keyword">typeof</span> a !== <span class="string">'object'</span>) &#123;</div><div class="line">	<span class="keyword">return</span> <span class="keyword">typeof</span> a</div><div class="line">  &#125; <span class="keyword">else</span> &#123;</div><div class="line">    <span class="keyword">if</span>(a === <span class="literal">null</span>) <span class="keyword">return</span> <span class="string">'null'</span></div><div class="line">	<span class="keyword">return</span> a.constructor.toString().slice(<span class="number">9</span>,<span class="number">-20</span>) <span class="comment">// 只取结果中的类型字段 例子ƒ Number() &#123; [native code] &#125; 为构造函数</span></div><div class="line">  &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+<h5 id="2-instanceof"><a href="#2-instanceof" class="headerlink" title="2.instanceof"></a>2.instanceof</h5><p>使用instanceof判断 (原理：检测 c.prototype 是否存在于参数 a 的原型链上)<br>优点：能够判断出多层继承关系<br>缺点：不稳定 c.prototype可以改变  还可以通过 a.__proto__ = XX 改变变量的原型链从而改变结果 不能判断null和undefined<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">instance_of</span>(<span class="params">left, right</span>) </span>&#123;</div><div class="line">  <span class="comment">//添加null和undefined检测</span></div><div class="line">  <span class="keyword">if</span>(left === <span class="literal">null</span>) <span class="keyword">return</span> <span class="string">'null'</span></div><div class="line">  <span class="keyword">if</span>(left === <span class="literal">undefined</span>) <span class="keyword">return</span> <span class="string">'undefined'</span></div><div class="line">  <span class="comment">//instanceof的内部原理</span></div><div class="line">  <span class="keyword">var</span> pro = right.prototype;<span class="comment">// 检测类型的显示原型</span></div><div class="line">  left = left.__proto__;<span class="comment">// 变量的隐式原型</span></div><div class="line">  <span class="keyword">while</span> (<span class="literal">true</span>) &#123; </div><div class="line">    <span class="keyword">if</span> (left === <span class="literal">null</span>) </div><div class="line">      <span class="keyword">return</span> <span class="literal">false</span>; </div><div class="line">    <span class="keyword">if</span> (left === pro)</div><div class="line">      <span class="keyword">return</span> <span class="literal">true</span>; </div><div class="line">    left = left.__proto__; </div><div class="line">  &#125; </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h5 id="3-使用Object-prototype-toString的方法"><a href="#3-使用Object-prototype-toString的方法" class="headerlink" title="3.使用Object.prototype.toString的方法"></a>3.使用Object.prototype.toString的方法</h5><p>es5当中的实现原理</p>
+<ol>
+<li>如果 this是undefined ，返回 [object Undefined]   </li>
+<li>如果 this是null ， 返回 [object Null]  </li>
+<li>令 O 为以 this 作为参数调用 ToObject 的结果      </li>
+<li>令 class 为 O 的内部属性 [[Class]] 的值 </li>
+<li>返回三个字符串 “[object”, class, 以及”]” 拼接而成的字符串。<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">op_toString</span>(<span class="params">a</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="built_in">Object</span>.prototype.toString.call(a).slice(<span class="number">8</span>,<span class="number">-1</span>) <span class="comment">// 只取结果中的类型字段 例子为[object Number]</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>es6当中实现原理参考<a href="https://github.com/jkchao/blog/issues/8" target="_blank" rel="external">https://github.com/jkchao/blog/issues/8</a></p>
 
       
 
@@ -226,7 +211,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">-技术类 -AudioContext -WEB</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">-变量类型 -Web前端</a>
         		</li>
       		
 		</ul>
@@ -282,7 +267,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://wynode.com/2017/08/20/music/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://wynode.com/2017/12/26/practice1/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -296,18 +281,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/09/25/sublime/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Sublime Text3（3143） 使用笔记（1）。
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/07/12/javascript-array-md/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">JavaScript编程题 —— 数组篇</div>
+    <a href="/2017/11/06/mianshi/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">笔试题目总结。</div>
       <i class="icon-circle-right"></i>
     </a>
   
