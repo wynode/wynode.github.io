@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
 	<meta charset="UTF-8">
 	<title>Music Visualization</title>
 		<link rel="stylesheet" href="style.css">
@@ -20,8 +20,8 @@
 			<div id="chooser-dialog">
 				<h2>选择一首音乐到本页面</h2>
 				<h2 id="h2">（支持拖拽哦）</h2>
-				<a href="javascript:;" id="a-upload" target="_blank" rel="external">
-   					<input type="file" name="" id="chooser-input">上传文件
+				<a href="javascript:;" id="a-upload" target="_blank" rel="noopener">
+   					<input type="file" name id="chooser-input">上传文件
 				</a>
 				<p id="musicName"></p>
 				<div id="spinner-outer" class="hidden"><svg id="spinner" width="30" height="30" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><circle class="path" fill="none" stroke-width="2" stroke-linecap="round" cx="15" cy="15" r="13"/></svg></div><button id="chooser-button">开始播放</button>
@@ -43,7 +43,7 @@
 		<p>音量:</p><input type="range" id="range" value="0">
 		<button id="toggle">切换样式</button>
 		</div>
-		<a href="javascript:location.reload()" id="back" class="hidden" target="_blank" rel="external"><img src="back.png" alt="返回" style="width: 70px;height: 50px;position: absolute;right: 10px;"></a> 
+		<a href="javascript:location.reload()" id="back" class="hidden" target="_blank" rel="noopener"><img src="back.png" alt="返回" style="width: 70px;height: 50px;position: absolute;right: 10px;"></a> 
 		<script>
 		var audioInput = null;
 var file = null;

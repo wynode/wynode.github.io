@@ -1,163 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-
-    
   <url>
     <loc>http://wynode.com/2017/03/14/chrome-extension-dzsq/</loc>
-    <lastmod>2018-03-11T14:25:49.234Z</lastmod>
-    <data>
-        <display>
-        <title>点赞神器(说说and微博管理助手)———快速送上你的赞 丨 清空年少的过往。</title>
-        <pubTime>2017-03-14T12:10:48.000Z</pubTime>
-        
-        <tag>-技术类 -chrome extension</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wynode.com/2017/12/27/practice2/</loc>
-    <lastmod>2018-03-11T14:14:09.198Z</lastmod>
-    <data>
-        <display>
-        <title>晚间小练习---判断一个js变量的类型。</title>
-        <pubTime>2017-12-27T12:42:56.000Z</pubTime>
-        
-        <tag>-变量类型 -Web前端</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2019-02-23</lastmod>
+  </url>  <url>
     <loc>http://wynode.com/2017/10/22/mall/</loc>
-    <lastmod>2017-11-10T05:04:28.918Z</lastmod>
-    <data>
-        <display>
-        <title>基于 vue2 + vuex 构建的一个应用---网上书城。</title>
-        <pubTime>2017-10-22T12:42:56.000Z</pubTime>
-        
-        <tag>-技术类 -vue全家桶 -nodejs+express+mongodb</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wynode.com/2017/11/06/mianshi/</loc>
-    <lastmod>2017-11-10T05:03:36.522Z</lastmod>
-    <data>
-        <display>
-        <title>笔试题目总结。</title>
-        <pubTime>2017-11-06T12:42:56.000Z</pubTime>
-        
-        <tag>-笔试 -Web前端</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wynode.com/2017/08/20/music/</loc>
-    <lastmod>2017-10-28T06:32:49.220Z</lastmod>
-    <data>
-        <display>
-        <title>音乐可视化---跟上音乐的节拍。</title>
-        <pubTime>2017-08-20T12:42:56.000Z</pubTime>
-        
-        <tag>-技术类 -AudioContext -WEB</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
+    <lastmod>2019-02-23</lastmod>
+  </url>  <url>
     <loc>http://wynode.com/2017/10/15/mapalbum/</loc>
-    <lastmod>2017-10-20T16:01:43.004Z</lastmod>
-    <data>
-        <display>
-        <title>地图相册2.0。</title>
-        <pubTime>2017-10-15T14:42:56.000Z</pubTime>
-        
-        <tag>-技术类 -baiduditu API -WEB</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
+    <lastmod>2019-02-23</lastmod>
+  </url>  <url>
+    <loc>http://wynode.com/2017/08/20/music/</loc>
+    <lastmod>2019-02-23</lastmod>
+  </url>  <url>
     <loc>http://wynode.com/2017/09/25/sublime/</loc>
-    <lastmod>2017-10-17T11:24:07.281Z</lastmod>
-    <data>
-        <display>
-        <title>Sublime Text3（3143） 使用笔记（1）。</title>
-        <pubTime>2017-09-25T14:42:56.000Z</pubTime>
-        
-        <tag>-工具类 -Sublime Text3</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2019-02-23</lastmod>
+  </url>  <url>
+    <loc>http://wynode.com/2017/12/27/practice2/</loc>
+    <lastmod>2018-03-11</lastmod>
+  </url>  <url>
+    <loc>http://wynode.com/2017/11/06/mianshi/</loc>
+    <lastmod>2017-11-10</lastmod>
+  </url>  <url>
     <loc>http://wynode.com/2017/07/12/javascript-array-md/</loc>
-    <lastmod>2017-07-15T11:21:25.085Z</lastmod>
-    <data>
-        <display>
-        <title>JavaScript编程题 —— 数组篇</title>
-        <pubTime>2017-07-12T12:45:57.000Z</pubTime>
-        
-        <tag>-JavaScript -数组</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2017-07-15</lastmod>
+  </url>  <url>
     <loc>http://wynode.com/2017/04/02/mapalbum-md/</loc>
-    <lastmod>2017-04-02T15:28:38.733Z</lastmod>
-    <data>
-        <display>
-        <title>使用百度地图API创建的一个小应用————地图相册。</title>
-        <pubTime>2017-04-02T14:42:56.000Z</pubTime>
-        
-        <tag>-技术类 -baiduditu API -WEB</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-    
-    
+    <lastmod>2017-04-02</lastmod>
+  </url>
 </urlset>

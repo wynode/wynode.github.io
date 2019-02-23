@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
 
@@ -21,24 +21,26 @@
         s.parentNode.insertBefore(bp, s);
     })();
     </script>
-  <meta name="baidu-site-verification" content="m0FfH7fnLK" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta name="baidu-site-verification" content="m0FfH7fnLK">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://wynode.com">
   <title>基于 vue2 + vuex 构建的一个应用---网上书城。 | wynode的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="前端使用vue全家桶实现，服务端使用node+express+mongodb的组合，MEVN架构的一次实践。">
+<meta name="keywords" content="-技术类 -vue全家桶 -nodejs+express+mongodb">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于 vue2 + vuex 构建的一个应用---网上书城。">
 <meta property="og:url" content="http://wynode.com/2017/10/22/mall/index.html">
 <meta property="og:site_name" content="wynode的博客">
 <meta property="og:description" content="前端使用vue全家桶实现，服务端使用node+express+mongodb的组合，MEVN架构的一次实践。">
-<meta property="og:image" content="http://ol1l09l0b.bkt.clouddn.com/mall.gif">
-<meta property="og:image" content="http://ol1l09l0b.bkt.clouddn.com/mall2.png">
-<meta property="og:updated_time" content="2017-11-10T05:04:28.918Z">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://pnd8zf4bo.bkt.clouddn.com/mall.gif">
+<meta property="og:image" content="http://pnd8zf4bo.bkt.clouddn.com/mall2.png">
+<meta property="og:updated_time" content="2019-02-23T09:24:59.381Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于 vue2 + vuex 构建的一个应用---网上书城。">
 <meta name="twitter:description" content="前端使用vue全家桶实现，服务端使用node+express+mongodb的组合，MEVN架构的一次实践。">
-<meta name="twitter:image" content="http://ol1l09l0b.bkt.clouddn.com/mall.gif">
+<meta name="twitter:image" content="http://pnd8zf4bo.bkt.clouddn.com/mall.gif">
   
     <link rel="alternative" href="/atom.xml" title="wynode的博客" type="application/atom+xml">
   
@@ -57,7 +59,7 @@
   
 
 </head>
-
+</html>
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -193,8 +195,8 @@
 </blockquote>
 <a id="more"></a>
 <h4 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h4><p>一个多月零零散散的时间，终于是把这个项目完成了。这也是自己第一个用完整框架技术栈搭建的项目，对比之前自己在Sublime里手写每一行代码的刀耕火种的日子，用框架实在是舒服很多。代价也是明显的，你需要去适应另一种编码方式，常常也是右边Sublime，左边搜索引擎。</p>
-<p>你可以通过<a href="http://120.78.169.44/" target="_blank" rel="external">这个网址</a>（120.78.169.44）访问到我的项目（PC端和移动端均可）。</p>
-<h4 id="二、项目截图"><a href="#二、项目截图" class="headerlink" title="二、项目截图"></a>二、项目截图</h4><p>PC端<br><img src="http://ol1l09l0b.bkt.clouddn.com/mall.gif" alt="PC端"><br>移动端<br><img src="http://ol1l09l0b.bkt.clouddn.com/mall2.png" width="50%" height="50%"></p>
+<p>你可以通过<a href="http://120.78.169.44/" target="_blank" rel="noopener">这个网址</a>（120.78.169.44）访问到我的项目（PC端和移动端均可）。</p>
+<h4 id="二、项目截图"><a href="#二、项目截图" class="headerlink" title="二、项目截图"></a>二、项目截图</h4><p>PC端<br><img src="http://pnd8zf4bo.bkt.clouddn.com/mall.gif" alt="PC端"><br>移动端<br><img src="http://pnd8zf4bo.bkt.clouddn.com/mall2.png" width="50%" height="50%"></p>
 <h4 id="三、技术栈"><a href="#三、技术栈" class="headerlink" title="三、技术栈"></a>三、技术栈</h4><p>前端：vue2 + vuex + vue-router + axios + webpack + ES6<br>服务端：nodejs + express + mongoose<br>数据库： mongodb</p>
 <h4 id="四、实现功能"><a href="#四、实现功能" class="headerlink" title="四、实现功能"></a>四、实现功能</h4><ul>
 <li>登录</li>
@@ -202,12 +204,12 @@
 <li>购物车操作</li>
 <li>配送地址操作</li>
 <li>订单确认</li>
-<li>订单ID生成<h4 id="五、使用"><a href="#五、使用" class="headerlink" title="五、使用"></a>五、使用</h4>跟大多数node项目一样<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git clone https:<span class="comment">//github.com/wynode/book-mall.git</span></div><div class="line">cd bool-mall</div><div class="line">cnpm install</div><div class="line">node server/bin/www</div><div class="line">cnpm start</div></pre></td></tr></table></figure>
+<li>订单ID生成<h4 id="五、使用"><a href="#五、使用" class="headerlink" title="五、使用"></a>五、使用</h4>跟大多数node项目一样<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="comment">//github.com/wynode/book-mall.git</span></span><br><span class="line">cd bool-mall</span><br><span class="line">cnpm install</span><br><span class="line">node server/bin/www</span><br><span class="line">cnpm start</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h4 id="六、总结"><a href="#六、总结" class="headerlink" title="六、总结"></a>六、总结</h4><p>1、整个项目写下来，感觉对vue全家桶的理解能算是入门了。状态管理的vuex，路由的vue-router，http客户端的axios加上vue本身的components和computed等等特性的使用，对于常规的建站甚至是大型的单页面项目已经是足够了。<br>如果说与react和angular相比孰优孰劣我是没有资格去评判的，其他两种中我所接触了解的angular还停留在angular2上面（其控制器的实现真的是用冗长来形容），而现在angular已经做到了5.x,有了很大的变革，但由于没有向下兼容，加上迭代更新速度太快，所以流失的用户是相当多。而react还在我的下一个学习目标中，所以vue暂时在我心中算最好的前端框架吧。</p>
 <p>2、更重要的是前后分离的概念在我的心中更加的明确。开发阶段如果不是只有我一个人写，完全可以一个人写前端，一个写后端，最后上线方面，服务端的代码和前端代码的分开部署，互不干扰，让我体会到一个完整的项目应该有的样子。</p>
-<h4 id="七、代码"><a href="#七、代码" class="headerlink" title="七、代码"></a>七、代码</h4><p>我将代码上传到我的<a href="https://github.com/wynode/book-mall" target="_blank" rel="external">github主页</a>了，欢迎fork。</p>
+<h4 id="七、代码"><a href="#七、代码" class="headerlink" title="七、代码"></a>七、代码</h4><p>我将代码上传到我的<a href="https://github.com/wynode/book-mall" target="_blank" rel="noopener">github主页</a>了，欢迎fork。</p>
 
       
 
@@ -330,7 +332,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-				&copy; 2018 多走多看多想象
+				&copy; 2019 多走多看多想象
 				<span>    互联网ICP备案:蜀ICP备16031840号</span>
     	</div>
       	<div class="footer-right">
@@ -408,15 +410,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">-技术类 -chrome extension</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">-技术类 -vue全家桶 -nodejs+express+mongodb</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">-笔试 -Web前端</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -428,11 +422,19 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">-笔试 -Web前端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">-变量类型 -Web前端</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">-工具类 -Sublime Text3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">-技术类 -chrome extension</a>
               </li>
             
             <div class="clearfix"></div>
@@ -440,7 +442,7 @@
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br/>1、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            缺失模块。<br>1、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
             2、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
@@ -483,7 +485,7 @@
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">CS专业在校学生，喜欢前端，做着成为Full Stack Engineer兼作家的梦。嗯，生活中可爱又迷人。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">一名学生。</div>
   	  	
     	</section>
     
